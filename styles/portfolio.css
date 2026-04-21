@@ -1,0 +1,37 @@
+/* PORTFOLIO */
+.portfolio {
+  background: var(--bg-surface);
+}
+.portfolio-placeholder {
+  border: 0.5px dashed var(--border-mid);
+  border-radius: var(--radius-lg);
+  padding: 4rem 2rem;
+  text-align: center;
+  background: var(--bg-card);
+}
+.portfolio-icon {
+  width: 48px;
+  height: 48px;
+  border-radius: var(--radius-md);
+  background: var(--icon-bg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 1rem;
+}
+.portfolio-icon svg {
+  width: 22px;
+  height: 22px;
+  stroke: var(--accent);
+}
+.portfolio-placeholder h3 {
+  font-size: 15px;
+  font-weight: 500;
+  color: var(--text);
+  margin-bottom: 0.4rem;
+}
+.portfolio-placeholder p {
+  font-size: 13px;
+  color: var(--text-hint);
+  font-weight: 300;
+}

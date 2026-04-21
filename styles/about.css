@@ -1,0 +1,32 @@
+/* WHY */
+.why-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+.why-item {
+  padding: 2rem 2rem 2rem 0;
+  border-top: 0.5px solid var(--border);
+}
+.why-num {
+  font-family: "DM Mono", monospace;
+  font-size: 11px;
+  color: var(--num-color);
+  letter-spacing: 1px;
+  margin-bottom: 1rem;
+  transition: color 0.3s;
+}
+.why-item:hover .why-num {
+  color: var(--num-hover);
+}
+.why-item h4 {
+  font-size: 15px;
+  font-weight: 500;
+  color: var(--text);
+  margin-bottom: 0.4rem;
+}
+.why-item p {
+  font-size: 13px;
+  color: var(--text-muted);
+  line-height: 1.65;
+  font-weight: 300;
+}

@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bytecoders — Desenvolvimento</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles/styles.css" />
+    <link rel="stylesheet" href="styles/header.css">
+    <link rel="stylesheet" href="styles/hero.css">
+    <link rel="stylesheet" href="styles/services.css">
+    <link rel="stylesheet" href="styles/about.css">
+    <link rel="stylesheet" href="styles/portfolio.css">
+    <link rel="stylesheet" href="styles/contacts.css">
+    <link rel="stylesheet" href="styles/footer.css">
+  </head>
+  <body>
+    <div class="cursor-dot" id="cursorDot"></div>
+    <div class="cursor-ring" id="cursorRing"></div>
+
+    <nav id="mainNav">
+      <a href="#" class="logo">byte<span>coders</span></a>
+      <ul class="nav-links">
+        <li><a href="#servicos">SERVIÇOS</a></li>
+        <li><a href="#portfolio">PORTFÓLIO</a></li>
+        <li><a href="#contato">CONTATO</a></li>
+        <li>
+          <button
+            class="theme-toggle"
+            id="themeToggle"
+            aria-label="alternar tema"
+          >
+            <span class="theme-icon" id="themeIcon">☀</span>
+            <span id="themeLabel">light</span>
+          </button>
+        </li>
+      </ul>
+      <a href="#contato" class="nav-cta">Falar com a gente</a>
+    </nav>
+
+    <section class="hero" style="padding-top: 6rem; padding-bottom: 5rem">
+      <div class="badge">DESENVOLVIMENTO SOB MEDIDA</div>
+      <h1>seu projeto merece<br />código de <strong>qualidade</strong></h1>
+      <p id="heroP"></p>
+      <div class="hero-btns">
+        <a href="#contato" class="btn-primary">solicitar orçamento</a>
+        <a href="#servicos" class="btn-outline">ver serviços</a>
+      </div>
+    </section>
+
+    <section class="services" id="servicos">
+      <div class="inner">
+        <div class="section-label reveal">o que fazemos</div>
+        <div class="section-title reveal">serviços disponíveis</div>
+        <div class="section-sub reveal">
+          projetos freelancer com comunicação direta e entrega ágil
+        </div>
+        <div class="cards-grid">
+          <div class="service-card reveal">
+            <div class="service-icon">
+              <svg
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <rect x="3" y="3" width="18" height="18" rx="3" />
+                <path d="M3 9h18" />
+                <path d="M9 21V9" />
+              </svg>
+            </div>
+            <h3>desenvolvimento web</h3>
+            <p>
+              Sites institucionais, landing pages e aplicações web responsivas e
+              modernas.
+            </p>
+          </div>
+          <div class="service-card reveal">
+            <div class="service-icon">
+              <svg
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path d="M6.5 8.5l-3 3 3 3M17.5 8.5l3 3-3 3M14 6l-4 12" />
+              </svg>
+            </div>
+            <h3>sistemas e APIs</h3>
+            <p>
+              Back-end, integrações entre sistemas e APIs RESTful para seu
+              negócio crescer.
+            </p>
+          </div>
+          <div class="service-card reveal">
+            <div class="service-icon">
+              <svg
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <rect x="5" y="2" width="14" height="20" rx="2" />
+                <path d="M12 18h.01" />
+              </svg>
+            </div>
+            <h3>apps mobile</h3>
+            <p>
+              Aplicativos para Android e iOS com foco em usabilidade e
+              performance.
+            </p>
+          </div>
+          <div class="service-card reveal">
+            <div class="service-icon">
+              <svg
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <circle cx="12" cy="12" r="3" />
+                <path
+                  d="M12 2v3M12 19v3M4.22 4.22l2.12 2.12M17.66 17.66l2.12 2.12M2 12h3M19 12h3M4.22 19.78l2.12-2.12M17.66 6.34l2.12-2.12"
+                />
+              </svg>
+            </div>
+            <h3>automações</h3>
+            <p>
+              Scripts, bots e automações para economizar tempo e reduzir
+              trabalho manual.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="sobre">
+      <div class="inner">
+        <div class="section-label reveal">por que a bytecoders</div>
+        <div class="section-title reveal">o que nos diferencia</div>
+        <div class="section-sub reveal">
+          valores que guiam cada projeto que entregamos
+        </div>
+        <div class="why-grid">
+          <div class="why-item reveal">
+            <div class="why-num">01</div>
+            <h4>comunicação direta</h4>
+            <p>
+              Sem intermediários. Você fala direto com quem vai codar seu
+              projeto.
+            </p>
+          </div>
+          <div class="why-item reveal">
+            <div class="why-num">02</div>
+            <h4>prazo real</h4>
+            <p>
+              Só assumimos projetos que conseguimos entregar no prazo combinado.
+            </p>
+          </div>
+          <div class="why-item reveal">
+            <div class="why-num">03</div>
+            <h4>código limpo</h4>
+            <p>
+              Entregamos código organizado, comentado e fácil de manter no
+              futuro.
+            </p>
+          </div>
+          <div class="why-item reveal">
+            <div class="why-num">04</div>
+            <h4>suporte pós-entrega</h4>
+            <p>
+              Acompanhamos após a entrega para garantir que tudo funciona certo.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="portfolio" id="portfolio">
+      <div class="inner">
+        <div class="section-label reveal">portfólio</div>
+        <div class="section-title reveal">nossos projetos</div>
+        <div class="section-sub reveal">
+          em breve compartilharemos nossos trabalhos aqui
+        </div>
+        <div class="portfolio-placeholder reveal">
+          <div class="portfolio-icon">
+            <svg
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke-width="1.5"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <rect x="2" y="7" width="20" height="14" rx="2" />
+              <path d="M16 3H8L6 7h12l-2-4z" />
+            </svg>
+          </div>
+          <h3>projetos a caminho</h3>
+          <p>volte em breve — nosso primeiro projeto chega logo</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="contato">
+      <div class="contact-card reveal">
+        <div class="section-label">contato</div>
+        <h2>pronto para começar?</h2>
+        <p>
+          Conta pra gente o que você precisa. Respondemos em até 24 horas com um
+          orçamento sem compromisso.
+        </p>
+        <div class="contact-links">
+          <a href="https://wa.me/55SEUNUMERO" class="btn-light" target="_blank"
+            >entrar em contato</a
+          >
+          <a
+            href="https://www.instagram.com/_bytecoders/"
+            class="btn-ghost"
+            target="_blank"
+            >@_bytecoders no instagram</a
+          >
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <span class="footer-logo">byte<span>coders</span></span>
+      <span>Feito com código e café &mdash; 2026</span>
+      <a
+        href="https://www.instagram.com/_bytecoders/"
+        style="font-size: 13px; color: var(--text-hint); text-decoration: none"
+        target="_blank"
+        >@_bytecoders</a
+      >
+    </footer>
+    <script src="javascript/script.js"></script>
+  </body>
+</html>

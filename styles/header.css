@@ -1,0 +1,100 @@
+/* NAV */
+nav {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2.5rem;
+  background: var(--nav-bg);
+  backdrop-filter: blur(14px);
+  border-bottom: 0.5px solid var(--border);
+  transition: box-shadow 0.3s, background 0.3s;
+}
+.logo {
+  font-family: "DM Mono", monospace;
+  font-size: 17px;
+  font-weight: 500;
+  color: var(--text);
+  text-decoration: none;
+  letter-spacing: -0.5px;
+}
+.logo span {
+  color: var(--accent);
+}
+.nav-links {
+  display: flex;
+  gap: 2rem;
+  list-style: none;
+  align-items: center;
+}
+.nav-links a {
+  font-size: 14px;
+  color: var(--text-muted);
+  text-decoration: none;
+  transition: color 0.15s;
+  position: relative;
+}
+.nav-links a::after {
+  content: "";
+  position: absolute;
+  bottom: -3px;
+  left: 0;
+  width: 0;
+  height: 1.5px;
+  background: var(--accent);
+  transition: width 0.25s ease;
+}
+.nav-links a:hover {
+  color: var(--text);
+}
+.nav-links a:hover::after,
+.nav-links a.active::after {
+  width: 100%;
+}
+.nav-links a.active {
+  color: var(--text);
+}
+
+/* Toggle dark/light */
+.theme-toggle {
+  background: none;
+  border: 0.5px solid var(--border-mid);
+  border-radius: 99px;
+  padding: 5px 10px;
+  cursor: none;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  color: var(--text-muted);
+  font-size: 12px;
+  font-family: "DM Mono", monospace;
+  transition: border-color 0.2s, color 0.2s, background 0.2s;
+}
+.theme-toggle:hover {
+  border-color: var(--accent);
+  color: var(--text);
+  background: var(--card-hover);
+}
+.theme-icon {
+  font-size: 13px;
+}
+
+.nav-cta {
+  background: var(--btn-bg);
+  color: var(--btn-text);
+  font-family: "DM Sans", sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  padding: 9px 18px;
+  border-radius: var(--radius-md);
+  border: none;
+  cursor: none;
+  text-decoration: none;
+  transition: background 0.15s, transform 0.15s;
+}
+.nav-cta:hover {
+  background: var(--btn-hover);
+  transform: translateY(-1px);
+}
